@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinsheng (Frank) Lai - Academic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        academic: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7', // Academic Blue
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Merriweather', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        .project-card:hover { transform: translateY(-5px); }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e2e8f0' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-bold text-xl text-academic-800 tracking-tight">Jinsheng Lai (Frank)</div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-academic-600 transition">About</a>
+                    <a href="#research" class="hover:text-academic-600 transition">Research</a>
+                    <a href="#publications" class="hover:text-academic-600 transition">Publications</a>
+                    <a href="#awards" class="hover:text-academic-600 transition">Awards</a>
+                    <a href="#contact" class="hover:text-academic-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="pt-32 pb-20 hero-pattern border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <!-- Avatar Placeholder - Replace 'src' with your actual photo -->
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-academic-600 to-cyan-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <img src="https://ui-avatars.com/api/?name=Jinsheng+Lai&background=0284c7&color=fff&size=200" alt="Jinsheng Lai" class="relative w-40 h-40 rounded-full border-4 border-white shadow-lg object-cover">
+            </div>
+            
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+                    Jinsheng Lai <span class="text-academic-600">(Frank)</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-6 font-light">
+                    M.Eng. Student at South China University of Technology (SCUT)<br>
+                    <span class="text-sm text-slate-500 mt-2 block">Top 5% | Recommended for Admission | Civil & Ocean Engineering</span>
+                </p>
+                <p class="text-slate-600 max-w-2xl leading-relaxed mb-8">
+                    I am an aspiring researcher passionate about <strong>Marine Renewable Energy</strong>, <strong>Floating Wind Turbines</strong>, and <strong>Sustainable Composites (GFRP)</strong>. My goal is to develop "Waste-to-Energy" solutions that repurpose decommissioned wind turbine blades into resilient marine structures.
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="px-6 py-2.5 bg-academic-600 text-white rounded-lg shadow hover:bg-academic-800 transition font-medium">
+                        Contact Me
+                    </a>
+                    <a href="#" class="px-6 py-2.5 bg-white text-slate-700 border border-slate-300 rounded-lg shadow-sm hover:bg-slate-50 transition font-medium flex items-center gap-2">
+                        <i class="fas fa-file-pdf text-red-500"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Research Projects Section -->
+    <section id="research" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
+                <i class="fas fa-flask text-academic-600"></i> Selected Research
+            </h2>
+            
+            <div class="grid gap-12">
+                <!-- Project 1 -->
+                <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition duration-300">
+                    <div class="md:flex">
+                        <div class="md:w-2/5 bg-slate-100 relative min-h-[250px] md:min-h-0">
+                            <!-- Placeholder for Project Image/GIF -->
+                            <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <i class="fas fa-image text-4xl"></i>
+                                <span class="text-sm font-medium">Add Micro-CT / Simulation GIF Here</span>
+                            </div>
+                            <!-- <img src="path/to/your/image.jpg" class="absolute inset-0 w-full h-full object-cover"> -->
+                        </div>
+                        <div class="p-8 md:w-3/5">
+                            <div class="text-xs font-bold text-academic-600 uppercase tracking-wider mb-2">Master's Thesis | Ongoing</div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Raft-type Wave Energy Converter Using Decommissioned GFRP Blades</h3>
+                            <p class="text-slate-600 mb-4 leading-relaxed">
+                                Proposed a novel solution to the global wind blade waste problem by repurposing them into wave energy converters (WEC).
+                            </p>
+                            <ul class="space-y-2 mb-6 text-sm text-slate-600">
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Material Characterization:</strong> Utilized Micro-CT and Instron to analyze service-aged GFRP damage mechanisms.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Statistical Modeling:</strong> Established a stochastic damage model using Weibull distribution (SCI Paper Under Review).</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-spinner text-blue-500 mt-1 fa-spin"></i>
+                                    <span><strong>System Design:</strong> Designing GFRP-Steel connections using Abaqus/ANSYS and planning wave tank tests.</span>
+                                </li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Abaqus</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Micro-CT</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">ANSYS AQWA</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition duration-300">
+                    <div class="md:flex">
+                        <div class="md:w-2/5 bg-slate-100 relative min-h-[250px] md:min-h-0 order-first md:order-last">
+                            <!-- Placeholder -->
+                            <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <i class="fas fa-water text-4xl"></i>
+                                <span class="text-sm font-medium">Add OpenFast/AQWA Animation Here</span>
+                            </div>
+                        </div>
+                        <div class="p-8 md:w-3/5">
+                            <div class="text-xs font-bold text-academic-600 uppercase tracking-wider mb-2">Research Assistant</div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Coupled Aero-Hydro-Servo-Elastic Analysis of Floating Wind Turbines</h3>
+                            <p class="text-slate-600 mb-4 leading-relaxed">
+                                Investigated the dynamic response of semi-submersible platforms under wind-wave coupling effects.
+                            </p>
+                            <ul class="space-y-2 mb-6 text-sm text-slate-600">
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-code text-slate-400 mt-1"></i>
+                                    <span>Implemented <strong>F2A (Fast to AQWA)</strong> interface to transfer aerodynamic loads.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-chart-line text-slate-400 mt-1"></i>
+                                    <span>Conducted time-domain and frequency-domain analysis for mooring system tension.</span>
+                                </li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">OpenFast</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Sesam</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Hydrodynamics</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                 <!-- Project 3 & 4 (Grid Layout) -->
+                 <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Undergrad Thesis -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Undergraduate Thesis</div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Seismic Performance of Graded Yielding Metallic Dampers</h4>
+                        <p class="text-sm text-slate-600 mb-4">
+                            Utilized SAP2000 for Modal Decomposition and Time-History Analysis on 5-story steel frames. Verified "no collapse under major earthquakes".
+                        </p>
+                        <div class="h-32 bg-slate-50 rounded-lg flex items-center justify-center mb-2">
+                             <span class="text-xs text-slate-400">Add SAP2000 Model Screenshot</span>
+                        </div>
+                    </div>
+
+                    <!-- Coir Fiber -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Provincial Fund Project</div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Durability of FRP Reinforced SWSSC Artificial Reefs</h4>
+                        <p class="text-sm text-slate-600 mb-4">
+                            Investigated bond-slip behavior of GFRP in seawater concrete. Analyzed failure modes (pull-out vs. splitting) using Origin.
+                        </p>
+                        <div class="h-32 bg-slate-50 rounded-lg flex items-center justify-center mb-2">
+                            <span class="text-xs text-slate-400">Add Experiment Photo</span>
+                        </div>
+                    </div>
+                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Awards -->
+    <section id="publications" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <!-- Publications -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+                        <i class="fas fa-book-open text-academic-600"></i> Publications
+                    </h2>
+                    <ul class="space-y-6">
+                        <li class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-academic-600">
+                            <div class="text-sm font-bold text-slate-800">Experimental Study on Mechanical Properties and Weibull Statistical Analysis of GFRP from Decommissioned Wind Turbine Blades</div>
+                            <div class="text-sm text-slate-600 mt-1">
+                                <strong>Jinsheng Lai</strong>, Yanwen Li*, et al.
+                            </div>
+                            <div class="text-xs text-academic-600 mt-2 font-medium italic">Submitted to Construction and Building Materials [Under Review]</div>
+                        </li>
+                        <li class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-slate-300">
+                            <div class="text-sm font-bold text-slate-800">A Corrugated Steel-Concrete Composite Floating Box Girder and Its Construction Method</div>
+                            <div class="text-sm text-slate-600 mt-1">
+                                Yanwen Li, Pan Qiu, Yingzhi Sun, <strong>Jinsheng Lai</strong>, Yilin Ren.
+                            </div>
+                            <div class="text-xs text-slate-500 mt-2">Chinese Invention Patent, No. CN202411307509.0 [Published]</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Awards -->
+                <div id="awards">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+                        <i class="fas fa-trophy text-yellow-500"></i> Honors & Awards
+                    </h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="text-lg font-bold text-slate-300">2024</div>
+                            <div>
+                                <div class="font-bold text-slate-900">Outstanding Graduate</div>
+                                <div class="text-sm text-slate-600">Hainan University (Top students for comprehensive excellence)</div>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="text-lg font-bold text-slate-300">2023</div>
+                            <div>
+                                <div class="font-bold text-slate-900">First Prize, National Structure Design Competition</div>
+                                <div class="text-sm text-slate-600">Top 1% of teams nationwide</div>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="text-lg font-bold text-slate-300">2022</div>
+                            <div>
+                                <div class="font-bold text-slate-900">First-Class Comprehensive Scholarship</div>
+                                <div class="text-sm text-slate-600">Academic Excellence</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-slate-900 text-slate-300 py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Let's Connect</h2>
+            <div class="flex justify-center gap-8 mb-8">
+                <a href="mailto:reallai@163.com" class="hover:text-white transition flex items-center gap-2">
+                    <i class="fas fa-envelope text-xl"></i> reallai@163.com
+                </a>
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-phone text-xl"></i> (+86) 138-xxxx-xxxx
+                </span>
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-xl"></i> Guangzhou, China
+                </span>
+            </div>
+            <p class="text-sm text-slate-500">
+                &copy; 2025 Jinsheng Lai. Built with Tailwind CSS.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
