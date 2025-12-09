@@ -94,8 +94,9 @@
                 <i class="fas fa-flask text-academic-600"></i> Selected Research
             </h2>
             
+             
             <div class="grid gap-12">
-                <!-- Project 1: Modified Layout for 3 Stages -->
+                <!-- Project 1: Modified Layout for 3 Stages with Gallery Feature -->
                 <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition duration-300 p-8">
                     <!-- Header Text -->
                     <div class="mb-8">
@@ -106,19 +107,24 @@
                         </p>
                     </div>
 
-                    <!-- The 3 Stages Grid with Images -->
+                    <!-- The 3 Stages Grid with Images (Clickable for Gallery) -->
                     <div class="grid md:grid-cols-3 gap-6 mb-8">
                         <!-- Stage 1 -->
-                        <div class="group">
-                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200">
-                                <!-- Placeholder for Stage 1 Image -->
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                        <div class="group cursor-pointer" onclick="openGallery('stage1')">
+                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200 group-hover:shadow-md transition">
+                                <!-- Placeholder Image -->
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 bg-slate-50">
                                     <i class="fas fa-microscope text-3xl"></i>
                                     <span class="text-xs font-medium uppercase tracking-wide">Micro-CT Scan</span>
                                 </div>
-                                <!-- Replace with: <img src="images/stage1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"> -->
+                                <!-- Overlay Icon on Hover -->
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                    <span class="bg-white/90 text-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm">
+                                        <i class="fas fa-images mr-1"></i> View Gallery
+                                    </span>
+                                </div>
                             </div>
-                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2">
+                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2 group-hover:text-academic-600 transition">
                                 <span class="bg-academic-100 text-academic-800 text-xs px-2 py-0.5 rounded-full">Stage 1</span>
                                 Material Characterization
                             </h4>
@@ -128,16 +134,21 @@
                         </div>
 
                         <!-- Stage 2 -->
-                        <div class="group">
-                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200">
-                                <!-- Placeholder for Stage 2 Image -->
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                        <div class="group cursor-pointer" onclick="openGallery('stage2')">
+                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200 group-hover:shadow-md transition">
+                                <!-- Placeholder Image -->
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 bg-slate-50">
                                     <i class="fas fa-chart-bell-curve text-3xl"></i>
                                     <span class="text-xs font-medium uppercase tracking-wide">Weibull Analysis</span>
                                 </div>
-                                <!-- Replace with: <img src="images/stage2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"> -->
+                                <!-- Overlay Icon on Hover -->
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                    <span class="bg-white/90 text-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm">
+                                        <i class="fas fa-images mr-1"></i> View Gallery
+                                    </span>
+                                </div>
                             </div>
-                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2">
+                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2 group-hover:text-academic-600 transition">
                                 <span class="bg-academic-100 text-academic-800 text-xs px-2 py-0.5 rounded-full">Stage 2</span>
                                 Statistical Modeling
                             </h4>
@@ -147,16 +158,21 @@
                         </div>
 
                         <!-- Stage 3 -->
-                        <div class="group">
-                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200">
-                                <!-- Placeholder for Stage 3 Image -->
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                        <div class="group cursor-pointer" onclick="openGallery('stage3')">
+                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200 group-hover:shadow-md transition">
+                                <!-- Placeholder Image -->
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 bg-slate-50">
                                     <i class="fas fa-drafting-compass text-3xl"></i>
                                     <span class="text-xs font-medium uppercase tracking-wide">System Design</span>
                                 </div>
-                                <!-- Replace with: <img src="images/stage3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"> -->
+                                <!-- Overlay Icon on Hover -->
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                    <span class="bg-white/90 text-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm">
+                                        <i class="fas fa-images mr-1"></i> View Gallery
+                                    </span>
+                                </div>
                             </div>
-                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2">
+                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2 group-hover:text-academic-600 transition">
                                 <span class="bg-academic-100 text-academic-800 text-xs px-2 py-0.5 rounded-full">Stage 3</span>
                                 System Design
                             </h4>
@@ -323,7 +339,109 @@
             </p>
         </div>
     </footer>
+<!-- Gallery Modal Structure -->
+    <div id="gallery-modal" class="fixed inset-0 bg-black/90 z-[60] hidden justify-center items-center backdrop-blur-sm">
+        <button onclick="closeGallery()" class="absolute top-4 right-4 text-white hover:text-academic-100 transition p-2">
+            <i class="fas fa-times text-3xl"></i>
+        </button>
+        
+        <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition p-4">
+            <i class="fas fa-chevron-left text-4xl"></i>
+        </button>
+        
+        <div class="max-w-4xl w-full max-h-[85vh] p-4 flex flex-col items-center">
+            <img id="gallery-image" src="" class="max-w-full max-h-[70vh] object-contain rounded shadow-2xl mb-4" alt="Research Detail">
+            <div class="text-center">
+                <p id="gallery-caption" class="text-white text-lg font-medium tracking-wide"></p>
+                <p id="gallery-counter" class="text-slate-400 text-sm mt-1"></p>
+            </div>
+        </div>
 
+        <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition p-4">
+            <i class="fas fa-chevron-right text-4xl"></i>
+        </button>
+    </div>
+
+    <script>
+        // Gallery Data: Replace these placeholders with your actual image paths
+        // Format: 'stageID': [{ url: 'image.jpg', caption: 'Description' }, ...]
+        const galleryData = {
+            'stage1': [
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Micro-CT+Slice+View', caption: 'Micro-CT Cross-sectional Analysis' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Instron+Setup', caption: 'Tensile Testing Setup (Instron)' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Damage+Pattern', caption: 'Fiber Breakage Patterns' }
+            ],
+            'stage2': [
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Weibull+Plot', caption: 'Weibull Probability Plot' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Damage+Evolution', caption: 'Stochastic Damage Evolution Model' }
+            ],
+            'stage3': [
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=WEC+Design+Cad', caption: 'WEC System CAD Model' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=AQWA+Mesh', caption: 'Hydrodynamic Mesh in AQWA' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Connection+Detail', caption: 'GFRP-Steel Connection Detail' }
+            ]
+        };
+
+        let currentStageImages = [];
+        let currentImageIndex = 0;
+
+        function openGallery(stageId) {
+            currentStageImages = galleryData[stageId];
+            if (!currentStageImages) return;
+            
+            currentImageIndex = 0;
+            updateGalleryContent();
+            
+            const modal = document.getElementById('gallery-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeGallery() {
+            const modal = document.getElementById('gallery-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        function updateGalleryContent() {
+            const imgElement = document.getElementById('gallery-image');
+            const captionElement = document.getElementById('gallery-caption');
+            const counterElement = document.getElementById('gallery-counter');
+            
+            const item = currentStageImages[currentImageIndex];
+            
+            imgElement.src = item.url;
+            captionElement.textContent = item.caption;
+            counterElement.textContent = `${currentImageIndex + 1} / ${currentStageImages.length}`;
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % currentStageImages.length;
+            updateGalleryContent();
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + currentStageImages.length) % currentStageImages.length;
+            updateGalleryContent();
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('gallery-modal');
+            if (modal.classList.contains('hidden')) return;
+
+            if (event.key === 'Escape') closeGallery();
+            if (event.key === 'ArrowRight') nextImage();
+            if (event.key === 'ArrowLeft') prevImage();
+        });
+
+        // Close when clicking outside image
+        document.getElementById('gallery-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeGallery();
+        });
+    </script>
 </body>
 
 </html>
