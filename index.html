@@ -70,7 +70,7 @@
                 </h1>
                 <p class="text-xl text-slate-600 mb-6 font-light">
                     M.Eng. Student at South China University of Technology (SCUT)<br>
-                    <span class="text-sm text-slate-500 mt-2 block">Top 5% | Recommended for Admission | Civil & Ocean Engineering</span>
+                    <span class="text-sm text-slate-500 mt-2 block">Top 5% | Recommended for Admission | Civil Engineering</span>
                 </p>
                 <p class="text-slate-600 max-w-2xl leading-relaxed mb-8">
                     I am an aspiring researcher passionate about <strong>Marine Renewable Energy</strong>, <strong>Floating Wind Turbines</strong>, and <strong>Sustainable Composites (GFRP)</strong>. My goal is to develop "Waste-to-Energy" solutions that repurpose decommissioned wind turbine blades into resilient marine structures.
@@ -95,43 +95,83 @@
             </h2>
             
             <div class="grid gap-12">
-                <!-- Project 1 -->
-                <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition duration-300">
-                    <div class="md:flex">
-                        <div class="md:w-2/5 bg-slate-100 relative min-h-[250px] md:min-h-0">
-                            <!-- Placeholder for Project Image/GIF -->
-                            <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
-                                <i class="fas fa-image text-4xl"></i>
-                                <span class="text-sm font-medium">Add Micro-CT / Simulation GIF Here</span>
+                <!-- Project 1: Modified Layout for 3 Stages -->
+                <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition duration-300 p-8">
+                    <!-- Header Text -->
+                    <div class="mb-8">
+                        <div class="text-xs font-bold text-academic-600 uppercase tracking-wider mb-2">Master's Thesis | Ongoing</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Raft-type Wave Energy Converter Using Decommissioned GFRP Blades</h3>
+                        <p class="text-slate-600 leading-relaxed max-w-3xl">
+                            Proposed a novel solution to the global wind blade waste problem by repurposing them into wave energy converters (WEC). The research is divided into three key phases:
+                        </p>
+                    </div>
+
+                    <!-- The 3 Stages Grid with Images -->
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <!-- Stage 1 -->
+                        <div class="group">
+                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200">
+                                <!-- Placeholder for Stage 1 Image -->
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-microscope text-3xl"></i>
+                                    <span class="text-xs font-medium uppercase tracking-wide">Micro-CT Scan</span>
+                                </div>
+                                <!-- Replace with: <img src="images/stage1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"> -->
                             </div>
-                            <!-- <img src="path/to/your/image.jpg" class="absolute inset-0 w-full h-full object-cover"> -->
-                        </div>
-                        <div class="p-8 md:w-3/5">
-                            <div class="text-xs font-bold text-academic-600 uppercase tracking-wider mb-2">Master's Thesis | Ongoing</div>
-                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Raft-type Wave Energy Converter Using Decommissioned GFRP Blades</h3>
-                            <p class="text-slate-600 mb-4 leading-relaxed">
-                                Proposed a novel solution to the global wind blade waste problem by repurposing them into wave energy converters (WEC).
+                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2">
+                                <span class="bg-academic-100 text-academic-800 text-xs px-2 py-0.5 rounded-full">Stage 1</span>
+                                Material Characterization
+                            </h4>
+                            <p class="text-sm text-slate-600 leading-snug">
+                                Utilized Micro-CT and Instron to analyze damage mechanisms in service-aged GFRP materials.
                             </p>
-                            <ul class="space-y-2 mb-6 text-sm text-slate-600">
-                                <li class="flex items-start gap-2">
-                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
-                                    <span><strong>Material Characterization:</strong> Utilized Micro-CT and Instron to analyze service-aged GFRP damage mechanisms.</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
-                                    <span><strong>Statistical Modeling:</strong> Established a stochastic damage model using Weibull distribution (SCI Paper Under Review).</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fas fa-spinner text-blue-500 mt-1 fa-spin"></i>
-                                    <span><strong>System Design:</strong> Designing GFRP-Steel connections using Abaqus/ANSYS and planning wave tank tests.</span>
-                                </li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Abaqus</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Micro-CT</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">ANSYS AQWA</span>
-                            </div>
                         </div>
+
+                        <!-- Stage 2 -->
+                        <div class="group">
+                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200">
+                                <!-- Placeholder for Stage 2 Image -->
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-chart-bell-curve text-3xl"></i>
+                                    <span class="text-xs font-medium uppercase tracking-wide">Weibull Analysis</span>
+                                </div>
+                                <!-- Replace with: <img src="images/stage2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"> -->
+                            </div>
+                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2">
+                                <span class="bg-academic-100 text-academic-800 text-xs px-2 py-0.5 rounded-full">Stage 2</span>
+                                Statistical Modeling
+                            </h4>
+                            <p class="text-sm text-slate-600 leading-snug">
+                                Established a stochastic damage model using Weibull distribution (SCI Paper Under Review).
+                            </p>
+                        </div>
+
+                        <!-- Stage 3 -->
+                        <div class="group">
+                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200">
+                                <!-- Placeholder for Stage 3 Image -->
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-drafting-compass text-3xl"></i>
+                                    <span class="text-xs font-medium uppercase tracking-wide">System Design</span>
+                                </div>
+                                <!-- Replace with: <img src="images/stage3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"> -->
+                            </div>
+                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2">
+                                <span class="bg-academic-100 text-academic-800 text-xs px-2 py-0.5 rounded-full">Stage 3</span>
+                                System Design
+                            </h4>
+                            <p class="text-sm text-slate-600 leading-snug">
+                                Designing GFRP-Steel connections using Abaqus/ANSYS and planning wave tank tests.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
+                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Abaqus</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Micro-CT</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">ANSYS AQWA</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Weibull Distribution</span>
                     </div>
                 </article>
 
@@ -266,20 +306,20 @@
     <!-- Footer / Contact -->
     <footer id="contact" class="bg-slate-900 text-slate-300 py-12">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold text-white mb-6">Let's Connect</h2>
+            <h2 class="text-2xl font-bold text-white mb-6">Connect Me</h2>
             <div class="flex justify-center gap-8 mb-8">
                 <a href="mailto:reallai@163.com" class="hover:text-white transition flex items-center gap-2">
                     <i class="fas fa-envelope text-xl"></i> reallai@163.com
                 </a>
                 <span class="flex items-center gap-2">
-                    <i class="fas fa-phone text-xl"></i> (+86) 138-xxxx-xxxx
+                    <i class="fas fa-phone text-xl"></i> (+86) 138-5080-6001
                 </span>
                 <span class="flex items-center gap-2">
                     <i class="fas fa-map-marker-alt text-xl"></i> Guangzhou, China
                 </span>
             </div>
             <p class="text-sm text-slate-500">
-                &copy; 2025 Jinsheng Lai. Built with Tailwind CSS.
+                &copy; 2025 Jinsheng Lai.
             </p>
         </div>
     </footer>
