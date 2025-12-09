@@ -1,11 +1,90 @@
 ---
-permalink: /
-title: "About me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+layout: null
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinsheng (Frank) Lai - Academic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        academic: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7', 
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Merriweather', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .project-card:hover { transform: translateY(-5px); }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e2e8f0' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-{% include base_path %}
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-bold text-xl text-academic-800 tracking-tight editable">Jinsheng Lai (Frank)</div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-academic-600 transition">About</a>
+                    <a href="#research" class="hover:text-academic-600 transition">Research</a>
+                    <a href="#publications" class="hover:text-academic-600 transition">Publications</a>
+                    <a href="#contact" class="hover:text-academic-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="pt-32 pb-20 hero-pattern border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-academic-600 to-cyan-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <img src="https://ui-avatars.com/api/?name=Jinsheng+Lai&background=0284c7&color=fff&size=200" alt="Jinsheng Lai" class="relative w-40 h-40 rounded-full border-4 border-white shadow-lg object-cover editable">
+            </div>
+            
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4 editable">
+                    Jinsheng Lai <span class="text-academic-600">(Frank)</span>
+                </h1>
+                
+                <div class="text-xl text-slate-600 mb-6 font-light editable">
+                    <p>M.Eng. Student at South China University of Technology (SCUT)</p>
+                    <span class="text-sm text-slate-500 mt-2 block">Top 5% | Recommended for Admission | Civil & Ocean Engineering</span>
+                </div>
+
+                <div class="text-slate-600 max-w-2xl leading-relaxed mb-8 editable">
+                    <p>I am an aspiring researcher passionate about <strong>Marine Renewable Energy</strong>, <strong>Floating Wind Turbines</strong>, and <strong>Sustainable Composites (GFRP)</strong>. My goal is to develop "Waste-to-Energy" solutions that repurpose decommissioned wind turbine blades into resilient marine structures.</p>
+                </div>
+
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="px-6 py-2.5 bg-academic-600 text-white rounded-lg shadow hover:bg-academic-800 transition font-medium">Contact Me</a>
+                    <a href="#" class="px-6 py-2.5 bg-white text-slate-700 border border-slate-300 rounded-lg shadow-sm hover:bg-slate-50 transition font-medium flex items-center gap-2">
+                        <i class="fas fa-file-pdf text-red-500"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    </body>
+</html>
