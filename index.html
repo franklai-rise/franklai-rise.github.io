@@ -420,12 +420,12 @@
             'stage2': [
                 { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Weibull+Plot', caption: 'Weibull Probability Plot' },
                 { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Model+Eq', caption: 'Stochastic Damage Equation' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Model+Eq', caption: 'Stochastic Damage Equation' },
                 { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Reliability', caption: 'Reliability Curve Analysis' }
             ],
             'stage3': [
                 { url: 'https://placehold.co/800x600/e2e8f0/475569?text=CAD+Model', caption: 'WEC System CAD Model' },
                 { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Mesh', caption: 'Hydrodynamic Mesh in AQWA' },
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Connection', caption: 'GFRP-Steel Connection Detail' },
                 { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Wave+Tank', caption: 'Wave Tank Experiment Setup' }
             ]
         };
@@ -490,13 +490,16 @@
         });
 
         // --- Horizontal Scroll with Mouse Wheel ---
+        // Ensure DOM is ready before attaching listeners
+        document.addEventListener('DOMContentLoaded', () => {
         const scrollContainers = document.querySelectorAll('.scroll-container');
         
         scrollContainers.forEach(container => {
             container.addEventListener('wheel', (evt) => {
                 evt.preventDefault();
                 container.scrollLeft += evt.deltaY;
-            });
+            }, { passive: false }); // Important for modern browsers
+        });
         });
     </script>
 
