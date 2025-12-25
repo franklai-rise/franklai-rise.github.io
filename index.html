@@ -96,103 +96,142 @@
                 <i class="fas fa-flask text-academic-600"></i> Selected Research
             </h2>
             
-             
-            <div class="grid gap-12">
-                <!-- Project 1: Modified Layout for 3 Stages with Gallery Feature -->
+            <!-- Project 1: Full Width Stages with Horizontal Scroll -->
                 <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition duration-300 p-8">
-                    <!-- Header Text -->
-                    <div class="mb-8">
-                        <div class="text-xs font-bold text-academic-600 uppercase tracking-wider mb-2">Master's Thesis | Ongoing</div>
-                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Raft-type Wave Energy Converter Using Decommissioned GFRP Blades</h3>
-                        <p class="text-slate-600 leading-relaxed max-w-3xl">
-                            Proposed a novel solution to the global wind blade waste problem by repurposing them into wave energy converters (WEC). The research is divided into three key phases:
+                    <!-- Project Title Header -->
+                    <div class="mb-10 border-b border-slate-100 pb-8">
+                        <div class="flex flex-wrap items-center gap-3 mb-3">
+                            <span class="text-xs font-bold text-white bg-academic-600 px-3 py-1 rounded-full uppercase tracking-wider">Master's Thesis</span>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full uppercase tracking-wider">Ongoing</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-slate-900 mb-4">Raft-type Wave Energy Converter Using Decommissioned GFRP Blades</h3>
+                        <p class="text-slate-600 leading-relaxed text-lg max-w-4xl">
+                            Proposed a novel solution to the global wind blade waste problem by repurposing them into wave energy converters (WEC). The research is structured into three distinct phases.
                         </p>
                     </div>
 
-                    <!-- The 3 Stages Grid with Images (Clickable for Gallery) -->
-                    <div class="grid md:grid-cols-3 gap-6 mb-8">
-                        <!-- Stage 1 -->
-                        <div class="group cursor-pointer" onclick="openGallery('stage1')">
-                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200 group-hover:shadow-md transition">
-                                <!-- Placeholder Image -->
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 bg-slate-50">
-                                    <i class="fas fa-microscope text-3xl"></i>
-                                    <span class="text-xs font-medium uppercase tracking-wide">Micro-CT Scan</span>
-                                </div>
-                                <!-- Overlay Icon on Hover -->
-                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
-                                    <span class="bg-white/90 text-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm">
-                                        <i class="fas fa-images mr-1"></i> View Gallery
-                                    </span>
-                                </div>
-                            </div>
-                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2 group-hover:text-academic-600 transition">
-                                <span class="bg-academic-100 text-academic-800 text-xs px-2 py-0.5 rounded-full">Stage 1</span>
-                                Material Characterization
-                            </h4>
-                            <p class="text-sm text-slate-600 leading-snug">
-                                Utilized Micro-CT and Instron to analyze damage mechanisms in service-aged GFRP materials.
-                            </p>
+                    <!-- Stage 1 Block -->
+                    <div class="mb-12">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 rounded-full bg-academic-100 text-academic-600 flex items-center justify-center font-bold text-sm">1</div>
+                            <h4 class="text-xl font-bold text-slate-800">Material Characterization</h4>
                         </div>
-
-                        <!-- Stage 2 -->
-                        <div class="group cursor-pointer" onclick="openGallery('stage2')">
-                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200 group-hover:shadow-md transition">
-                                <!-- Placeholder Image -->
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 bg-slate-50">
-                                    <i class="fas fa-chart-bell-curve text-3xl"></i>
-                                    <span class="text-xs font-medium uppercase tracking-wide">Weibull Analysis</span>
+                        <p class="text-slate-600 mb-4 text-sm max-w-3xl">
+                            Analyzed damage mechanisms in service-aged GFRP materials using Micro-CT scanning and Instron tensile testing to determine residual mechanical properties.
+                        </p>
+                        <!-- Horizontal Scroll Container -->
+                        <div class="scroll-container flex gap-4 overflow-x-auto pb-4 no-scrollbar cursor-grab active:cursor-grabbing">
+                            <!-- Image 1 -->
+                            <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage1', 0)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-microscope text-2xl"></i>
+                                    <span class="text-xs">Micro-CT Scan</span>
                                 </div>
-                                <!-- Overlay Icon on Hover -->
-                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
-                                    <span class="bg-white/90 text-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm">
-                                        <i class="fas fa-images mr-1"></i> View Gallery
-                                    </span>
+                                <!-- Replace src with your image -->
+                                <!-- <img src="path/to/img1.jpg" class="w-full h-full object-cover"> -->
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage1', 1)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-compress-arrows-alt text-2xl"></i>
+                                    <span class="text-xs">Compression Test</span>
                                 </div>
                             </div>
-                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2 group-hover:text-academic-600 transition">
-                                <span class="bg-academic-100 text-academic-800 text-xs px-2 py-0.5 rounded-full">Stage 2</span>
-                                Statistical Modeling
-                            </h4>
-                            <p class="text-sm text-slate-600 leading-snug">
-                                Established a stochastic damage model using Weibull distribution (SCI Paper Under Review).
-                            </p>
-                        </div>
-
-                        <!-- Stage 3 -->
-                        <div class="group cursor-pointer" onclick="openGallery('stage3')">
-                            <div class="h-48 bg-slate-100 rounded-xl mb-4 overflow-hidden relative border border-slate-200 group-hover:shadow-md transition">
-                                <!-- Placeholder Image -->
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 bg-slate-50">
-                                    <i class="fas fa-drafting-compass text-3xl"></i>
-                                    <span class="text-xs font-medium uppercase tracking-wide">System Design</span>
-                                </div>
-                                <!-- Overlay Icon on Hover -->
-                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
-                                    <span class="bg-white/90 text-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm">
-                                        <i class="fas fa-images mr-1"></i> View Gallery
-                                    </span>
+                            <!-- Image 3 -->
+                            <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage1', 2)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-chart-bar text-2xl"></i>
+                                    <span class="text-xs">Data Analysis</span>
                                 </div>
                             </div>
-                            <h4 class="font-bold text-slate-800 text-base mb-2 flex items-center gap-2 group-hover:text-academic-600 transition">
-                                <span class="bg-academic-100 text-academic-800 text-xs px-2 py-0.5 rounded-full">Stage 3</span>
-                                System Design
-                            </h4>
-                            <p class="text-sm text-slate-600 leading-snug">
-                                Designing GFRP-Steel connections using Abaqus/ANSYS and planning wave tank tests.
-                            </p>
+                            <!-- Image 4 -->
+                            <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage1', 3)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-search-plus text-2xl"></i>
+                                    <span class="text-xs">SEM Micrograph</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Tags -->
-                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
-                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Abaqus</span>
-                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Micro-CT</span>
-                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">ANSYS AQWA</span>
-                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium">Weibull Distribution</span>
+                    <!-- Stage 2 Block -->
+                    <div class="mb-12">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 rounded-full bg-academic-100 text-academic-600 flex items-center justify-center font-bold text-sm">2</div>
+                            <h4 class="text-xl font-bold text-slate-800">Statistical Modeling</h4>
+                        </div>
+                        <p class="text-slate-600 mb-4 text-sm max-w-3xl">
+                            Established a stochastic damage model using Weibull distribution to predict failure probabilities under varying load conditions.
+                        </p>
+                        <!-- Horizontal Scroll Container -->
+                        <div class="scroll-container flex gap-4 overflow-x-auto pb-4 no-scrollbar cursor-grab active:cursor-grabbing">
+                            <!-- Image 1 -->
+                            <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage2', 0)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-chart-bell-curve text-2xl"></i>
+                                    <span class="text-xs">Weibull Plot</span>
+                                </div>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage2', 1)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-calculator text-2xl"></i>
+                                    <span class="text-xs">Model Equations</span>
+                                </div>
+                            </div>
+                             <!-- Image 3 -->
+                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage2', 2)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-chart-line text-2xl"></i>
+                                    <span class="text-xs">Reliability Curve</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 3 Block -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 rounded-full bg-academic-100 text-academic-600 flex items-center justify-center font-bold text-sm">3</div>
+                            <h4 class="text-xl font-bold text-slate-800">System Design & Simulation</h4>
+                        </div>
+                        <p class="text-slate-600 mb-4 text-sm max-w-3xl">
+                            Designing GFRP-Steel connections using Abaqus/ANSYS and planning wave tank tests to validate the WEC performance.
+                        </p>
+                        <!-- Horizontal Scroll Container -->
+                        <div class="scroll-container flex gap-4 overflow-x-auto pb-4 no-scrollbar cursor-grab active:cursor-grabbing">
+                            <!-- Image 1 -->
+                            <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage3', 0)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-drafting-compass text-2xl"></i>
+                                    <span class="text-xs">CAD Model</span>
+                                </div>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage3', 1)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-water text-2xl"></i>
+                                    <span class="text-xs">Hydrodynamic Mesh</span>
+                                </div>
+                            </div>
+                            <!-- Image 3 -->
+                            <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage3', 2)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-project-diagram text-2xl"></i>
+                                    <span class="text-xs">Connection Detail</span>
+                                </div>
+                            </div>
+                             <!-- Image 4 -->
+                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage3', 3)">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                    <i class="fas fa-ship text-2xl"></i>
+                                    <span class="text-xs">Wave Tank Setup</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </article>
-
+            
                 <!-- Project 2 -->
                 <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition duration-300">
                     <div class="md:flex">
@@ -368,43 +407,50 @@
         // Gallery Data: Replace these placeholders with your actual image paths
         // Format: 'stageID': [{ url: 'image.jpg', caption: 'Description' }, ...]
         const galleryData = {
+ <script>
+        // --- Gallery Data ---
+        // Note: I've added a dummy structure. Update 'url' with your real image paths later.
+        const galleryData = {
             'stage1': [
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Micro-CT+Slice+View', caption: 'Micro-CT Cross-sectional Analysis' },
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Instron+Setup', caption: 'Tensile Testing Setup (Instron)' },
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Damage+Pattern', caption: 'Fiber Breakage Patterns' }
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Micro-CT+Scan', caption: 'Micro-CT Cross-sectional Analysis' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Compression+Test', caption: 'Compression Testing Setup' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Data+Analysis', caption: 'Preliminary Data Analysis' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=SEM+Micrograph', caption: 'SEM Micrograph of Fiber Breakage' }
             ],
             'stage2': [
                 { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Weibull+Plot', caption: 'Weibull Probability Plot' },
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Damage+Evolution', caption: 'Stochastic Damage Evolution Model' }
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Model+Eq', caption: 'Stochastic Damage Equation' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Reliability', caption: 'Reliability Curve Analysis' }
             ],
             'stage3': [
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=WEC+Design+Cad', caption: 'WEC System CAD Model' },
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=AQWA+Mesh', caption: 'Hydrodynamic Mesh in AQWA' },
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Connection+Detail', caption: 'GFRP-Steel Connection Detail' }
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=CAD+Model', caption: 'WEC System CAD Model' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Mesh', caption: 'Hydrodynamic Mesh in AQWA' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Connection', caption: 'GFRP-Steel Connection Detail' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Wave+Tank', caption: 'Wave Tank Experiment Setup' }
             ]
         };
 
         let currentStageImages = [];
         let currentImageIndex = 0;
 
-        function openGallery(stageId) {
+        function openGallery(stageId, index) {
             currentStageImages = galleryData[stageId];
             if (!currentStageImages) return;
             
-            currentImageIndex = 0;
+            currentImageIndex = index; // Start from the clicked image
             updateGalleryContent();
             
             const modal = document.getElementById('gallery-modal');
             modal.classList.remove('hidden');
             modal.classList.add('flex');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.body.style.overflow = 'hidden'; 
         }
 
         function closeGallery() {
             const modal = document.getElementById('gallery-modal');
             modal.classList.add('hidden');
             modal.classList.remove('flex');
-            document.body.style.overflow = 'auto'; // Restore scrolling
+            document.body.style.overflow = 'auto'; 
         }
 
         function updateGalleryContent() {
@@ -429,7 +475,7 @@
             updateGalleryContent();
         }
 
-        // Keyboard navigation
+        // --- Keyboard Support ---
         document.addEventListener('keydown', function(event) {
             const modal = document.getElementById('gallery-modal');
             if (modal.classList.contains('hidden')) return;
@@ -439,11 +485,20 @@
             if (event.key === 'ArrowLeft') prevImage();
         });
 
-        // Close when clicking outside image
         document.getElementById('gallery-modal').addEventListener('click', function(e) {
             if (e.target === this) closeGallery();
         });
-    </script>
-</body>
 
+        // --- Horizontal Scroll with Mouse Wheel ---
+        const scrollContainers = document.querySelectorAll('.scroll-container');
+        
+        scrollContainers.forEach(container => {
+            container.addEventListener('wheel', (evt) => {
+                evt.preventDefault();
+                container.scrollLeft += evt.deltaY;
+            });
+        });
+    </script>
+
+</body>
 </html>
