@@ -489,17 +489,18 @@
             if (e.target === this) closeGallery();
         });
 
-        // --- Horizontal Scroll with Mouse Wheel ---
+         // --- Horizontal Scroll with Mouse Wheel (Corrected) ---
         // Ensure DOM is ready before attaching listeners
         document.addEventListener('DOMContentLoaded', () => {
-        const scrollContainers = document.querySelectorAll('.scroll-container');
-        
-        scrollContainers.forEach(container => {
-            container.addEventListener('wheel', (evt) => {
-                evt.preventDefault();
-                container.scrollLeft += evt.deltaY;
-            }, { passive: false }); // Important for modern browsers
-        });
+            const scrollContainers = document.querySelectorAll('.scroll-container');
+            
+            scrollContainers.forEach(container => {
+                container.addEventListener('wheel', (evt) => {
+                    evt.preventDefault();
+                    // Increased sensitivity and added deltaX support just in case
+                    container.scrollLeft += (evt.deltaY + evt.deltaX) * 3;
+                }, { passive: false }); // Important for modern browsers
+            });
         });
     </script>
 
