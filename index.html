@@ -22,8 +22,10 @@
                         }
                     },
                     fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                        serif: ['Merriweather', 'Georgia', 'serif'],
+                        <!-- === MODIFICATION START: 1. Changed font to Cambria === -->
+                        sans: ['Cambria', 'Georgia', 'serif'],
+                        serif: ['Cambria', 'Georgia', 'serif'],
+                        <!-- === MODIFICATION END === -->
                     }
                 }
             }
@@ -69,8 +71,10 @@
                 <div class="font-bold text-xl text-academic-800 tracking-tight">Jinsheng Lai (Frank)</div>
                 <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
                     <a href="#about" class="hover:text-academic-600 transition">About</a>
-                    <a href="#research" class="hover:text-academic-600 transition">Research</a>
+                    <!-- === MODIFICATION START: Adjusted Nav order for new Publications section === -->
                     <a href="#publications" class="hover:text-academic-600 transition">Publications</a>
+                    <a href="#research" class="hover:text-academic-600 transition">Research</a>
+                    <!-- === MODIFICATION END === -->
                     <a href="#awards" class="hover:text-academic-600 transition">Awards</a>
                     <a href="#contact" class="hover:text-academic-600 transition">Contact</a>
                 </div>
@@ -96,7 +100,10 @@
                     <span class="text-sm text-slate-500 mt-2 block">Top 5% | Recommended for Admission | Civil Engineering</span>
                 </p>
                 <p class="text-slate-600 max-w-2xl leading-relaxed mb-8">
-                    I am an aspiring researcher passionate about <strong>Marine Renewable Energy</strong>, <strong>Floating Wind Turbines</strong>, and <strong>Sustainable Composites (GFRP)</strong>. My goal is to develop "Waste-to-Energy" solutions that repurpose decommissioned wind turbine blades into resilient marine structures.
+                    I am an aspiring researcher passionate about <strong>Marine Renewable Energy</strong>, <strong>Floating Wind Turbines</strong>, and <strong>Sustainable Composites (GFRP)</strong>. 
+                    <!-- === MODIFICATION START: 2. Deleted "My goal..." sentence === -->
+                    <!-- Removed: My goal is to develop "Waste-to-Energy" solutions that repurpose decommissioned wind turbine blades into resilient marine structures. -->
+                    <!-- === MODIFICATION END === -->
                 </p>
                 <div class="flex gap-4 justify-center md:justify-start">
                     <a href="#contact" class="px-6 py-2.5 bg-academic-600 text-white rounded-lg shadow hover:bg-academic-800 transition font-medium">
@@ -110,15 +117,75 @@
         </div>
     </header>
 
+    <!-- === MODIFICATION START: 3. Added Publications section before Research === -->
+    <!-- Publications & Patents Section -->
+    <section id="publications" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-10 flex items-center gap-3">
+                <i class="fas fa-book-open text-academic-600"></i> Publications & Patents
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- Paper Item -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 hover:shadow-md transition duration-300 relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-academic-600"></div>
+                    <div class="flex flex-col sm:flex-row gap-5 items-start">
+                        <div class="hidden sm:flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-sm text-academic-600 shrink-0">
+                            <i class="fas fa-file-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-2">
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full">SCI Q1</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full">IF = 4.9</span>
+                                <span class="px-3 py-1 bg-slate-200 text-slate-700 text-xs font-bold rounded-full">2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 leading-tight">Mechanical Properties and Feasibility of GFRP from Decommissioned Large-Scale Wind Turbine Blades for Wave Energy Converter: A Case Study</h3>
+                            <p class="text-slate-700 mb-3 text-sm sm:text-base">
+                                Li, Y.-W., <strong>Lai, J.-S.</strong>, Zhou, B.-Z., & Cheng, L.
+                            </p>
+                            <p class="text-slate-500 text-sm italic mb-4">Polymers, 18(7), 892.</p>
+                            <a href="https://doi.org/10.3390/polym18070892" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-academic-600 hover:text-academic-800 transition">
+                                <i class="fas fa-external-link-alt"></i> DOI: 10.3390/polym18070892
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent Item -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 hover:shadow-md transition duration-300 relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-slate-400"></div>
+                    <div class="flex flex-col sm:flex-row gap-5 items-start">
+                        <div class="hidden sm:flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-sm text-slate-500 shrink-0">
+                            <i class="fas fa-certificate text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-2">
+                                <span class="px-3 py-1 bg-slate-200 text-slate-700 text-xs font-bold rounded-full uppercase tracking-wider">Invention Patent</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 leading-tight">A Corrugated Steel-Concrete Composite Floating Box Girder and Its Construction Method</h3>
+                            <p class="text-slate-700 mb-3 text-sm sm:text-base">
+                                Co-inventor: Yanwen Li, Pan Zou, Yingzhi Sun, <strong>Jin-Sheng Lai</strong>, Yilin Ren.
+                            </p>
+                            <div class="text-slate-500 text-sm flex items-center gap-2">
+                                <i class="far fa-calendar-alt"></i> Publication date: November 2024
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === MODIFICATION END === -->
+
     <!-- Research Projects Section -->
-    <section id="research" class="py-20">
+    <section id="research" class="py-20 bg-slate-50 border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
                 <i class="fas fa-flask text-academic-600"></i> Selected Research
             </h2>
             
             <!-- Project 1: Full Width Stages with Horizontal Scroll -->
-                <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition duration-300 p-8">
+                <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden transition duration-300 p-8 mb-8">
                     <!-- Project Title Header -->
                     <div class="mb-10 border-b border-slate-100 pb-8">
                         <div class="flex flex-wrap items-center gap-3 mb-3">
@@ -144,30 +211,28 @@
                         <div class="scroll-container flex gap-4 overflow-x-auto pb-4 no-scrollbar cursor-grab active:cursor-grabbing">
                             <!-- Image 1 -->
                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage1', 0)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-microscope text-2xl"></i>
                                     <span class="text-xs">Micro-CT Scan</span>
                                 </div>
-                                <!-- Replace src with your image -->
-                                <!-- <img src="path/to/img1.jpg" class="w-full h-full object-cover"> -->
                             </div>
                             <!-- Image 2 -->
                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage1', 1)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-compress-arrows-alt text-2xl"></i>
                                     <span class="text-xs">Compression Test</span>
                                 </div>
                             </div>
                             <!-- Image 3 -->
                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage1', 2)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-chart-bar text-2xl"></i>
                                     <span class="text-xs">Data Analysis</span>
                                 </div>
                             </div>
                             <!-- Image 4 -->
                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage1', 3)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-search-plus text-2xl"></i>
                                     <span class="text-xs">SEM Micrograph</span>
                                 </div>
@@ -188,21 +253,21 @@
                         <div class="scroll-container flex gap-4 overflow-x-auto pb-4 no-scrollbar cursor-grab active:cursor-grabbing">
                             <!-- Image 1 -->
                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage2', 0)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-chart-bell-curve text-2xl"></i>
                                     <span class="text-xs">Weibull Plot</span>
                                 </div>
                             </div>
                             <!-- Image 2 -->
                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage2', 1)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-calculator text-2xl"></i>
                                     <span class="text-xs">Model Equations</span>
                                 </div>
                             </div>
                              <!-- Image 3 -->
                              <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage2', 2)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-chart-line text-2xl"></i>
                                     <span class="text-xs">Reliability Curve</span>
                                 </div>
@@ -223,28 +288,28 @@
                         <div class="scroll-container flex gap-4 overflow-x-auto pb-4 no-scrollbar cursor-grab active:cursor-grabbing">
                             <!-- Image 1 -->
                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage3', 0)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-drafting-compass text-2xl"></i>
                                     <span class="text-xs">CAD Model</span>
                                 </div>
                             </div>
                             <!-- Image 2 -->
                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage3', 1)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-water text-2xl"></i>
                                     <span class="text-xs">Hydrodynamic Mesh</span>
                                 </div>
                             </div>
                             <!-- Image 3 -->
                             <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage3', 2)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-project-diagram text-2xl"></i>
                                     <span class="text-xs">Connection Detail</span>
                                 </div>
                             </div>
                              <!-- Image 4 -->
                              <div class="flex-none w-72 h-48 bg-slate-100 rounded-lg overflow-hidden border border-slate-200 relative group" onclick="openGallery('stage3', 3)">
-                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
+                                <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2 hover:bg-slate-200 transition">
                                     <i class="fas fa-ship text-2xl"></i>
                                     <span class="text-xs">Wave Tank Setup</span>
                                 </div>
@@ -254,9 +319,9 @@
                 </article>
             
                 <!-- Project 2 -->
-                <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition duration-300">
+                <article class="project-card bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden transition duration-300 mb-8">
                     <div class="md:flex">
-                        <div class="md:w-2/5 bg-slate-100 relative min-h-[250px] md:min-h-0 order-first md:order-last">
+                        <div class="md:w-2/5 bg-slate-100 relative min-h-[250px] md:min-h-0 order-first md:order-last border-b md:border-b-0 md:border-l border-slate-200">
                             <!-- Placeholder -->
                             <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2">
                                 <i class="fas fa-water text-4xl"></i>
@@ -291,25 +356,25 @@
                  <!-- Project 3 & 4 (Grid Layout) -->
                  <div class="grid md:grid-cols-2 gap-8">
                     <!-- Undergrad Thesis -->
-                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm transition hover:shadow-md">
                         <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Undergraduate Thesis</div>
                         <h4 class="text-lg font-bold text-slate-900 mb-2">Seismic Performance of Graded Yielding Metallic Dampers</h4>
                         <p class="text-sm text-slate-600 mb-4">
                             Utilized SAP2000 for Modal Decomposition and Time-History Analysis on 5-story steel frames. Verified "no collapse under major earthquakes".
                         </p>
-                        <div class="h-32 bg-slate-50 rounded-lg flex items-center justify-center mb-2">
+                        <div class="h-32 bg-slate-50 border border-slate-100 rounded-lg flex items-center justify-center mb-2">
                              <span class="text-xs text-slate-400">Add SAP2000 Model Screenshot</span>
                         </div>
                     </div>
 
                     <!-- Coir Fiber -->
-                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm transition hover:shadow-md">
                         <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Served as a research assistant</div>
                         <h4 class="text-lg font-bold text-slate-900 mb-2">Durability of FRP Reinforced SWSSC Artificial Reefs</h4>
                         <p class="text-sm text-slate-600 mb-4">
                             Investigated mechanical behavior of coconut husk FRP in seawater concrete. Engaged in the processes of concrete preparation and experimental data processing.
                         </p>
-                        <div class="h-32 bg-slate-50 rounded-lg flex items-center justify-center mb-2">
+                        <div class="h-32 bg-slate-50 border border-slate-100 rounded-lg flex items-center justify-center mb-2">
                             <span class="text-xs text-slate-400">Add Experiment Photo</span>
                         </div>
                     </div>
@@ -319,73 +384,47 @@
         </div>
     </section>
 
-    <!-- Publications & Awards -->
-    <section id="publications" class="py-20 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12">
-                
-                <!-- Publications -->
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                        <i class="fas fa-book-open text-academic-600"></i> Publications
-                    </h2>
-                    <ul class="space-y-6">
-                        <li class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-academic-600">
-                            <div class="text-sm font-bold text-slate-800">Mechanical Properties and Micro-CT Characterization of GFRP composites from Decommissioned Wind Turbine Blades</div>
-                            <div class="text-sm text-slate-600 mt-1">
-                                Yanwen Li, <strong>Jinsheng Lai</strong>, Guangming Chen*, et al.
-                            </div>
-                            <div class="text-xs text-academic-600 mt-2 font-medium italic">Submitted to Composite structures [Under Review]</div>
-                        </li>
-                        <li class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-slate-300">
-                            <div class="text-sm font-bold text-slate-800">A Corrugated Steel-Concrete Composite Floating Box Girder and Its Construction Method</div>
-                            <div class="text-sm text-slate-600 mt-1">
-                                Yanwen Li, Pan Zou, Yingzhi Sun, <strong>Jinsheng Lai</strong>, Yilin Ren.
-                            </div>
-                            <div class="text-xs text-slate-500 mt-2">Chinese Invention Patent, No. CN202411307509.0 [Published]</div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Awards -->
-                <div id="awards">
-                    <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                        <i class="fas fa-trophy text-yellow-500"></i> Honors & Awards
-                    </h2>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-4">
-                            <div class="text-lg font-bold text-slate-300">2024</div>
-                            <div>
-                                <div class="font-bold text-slate-900">Outstanding Graduate</div>
-                                <div class="text-sm text-slate-600">Hainan University (Top students for comprehensive excellence)</div>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div class="text-lg font-bold text-slate-300">2023</div>
-                            <div>
-                                <div class="font-bold text-slate-900">First Prize, National Structure Design Competition</div>
-                                <div class="text-sm text-slate-600">Top 1% of teams nationwide</div>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div class="text-lg font-bold text-slate-300">2022</div>
-                            <div>
-                                <div class="font-bold text-slate-900">First-Class Comprehensive Scholarship</div>
-                                <div class="text-sm text-slate-600">Academic Excellence</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
+    <!-- === MODIFICATION START: 4. Cleaned up old bottom section to only feature Awards and centered it === -->
+    <!-- Awards Section -->
+    <section id="awards" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-10 flex items-center justify-center gap-3">
+                <i class="fas fa-trophy text-yellow-500"></i> Honors & Awards
+            </h2>
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-5 pb-6 border-b border-slate-200 last:border-0 last:pb-0">
+                        <div class="text-xl font-bold text-academic-600 mt-1">2024</div>
+                        <div>
+                            <div class="text-lg font-bold text-slate-900">Outstanding Graduate</div>
+                            <div class="text-slate-600 mt-1">Hainan University (Top students for comprehensive excellence)</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-5 pb-6 border-b border-slate-200 last:border-0 last:pb-0">
+                        <div class="text-xl font-bold text-academic-600 mt-1">2023</div>
+                        <div>
+                            <div class="text-lg font-bold text-slate-900">First Prize, National Structure Design Competition</div>
+                            <div class="text-slate-600 mt-1">Top 1% of teams nationwide</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-5 pb-6 border-b border-slate-200 last:border-0 last:pb-0">
+                        <div class="text-xl font-bold text-academic-600 mt-1">2022</div>
+                        <div>
+                            <div class="text-lg font-bold text-slate-900">First-Class Comprehensive Scholarship</div>
+                            <div class="text-slate-600 mt-1">Academic Excellence</div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
+    <!-- === MODIFICATION END === -->
 
     <!-- Footer / Contact -->
     <footer id="contact" class="bg-slate-900 text-slate-300 py-12">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-2xl font-bold text-white mb-6">Connect Me</h2>
-            <div class="flex justify-center gap-8 mb-8">
+            <div class="flex justify-center flex-wrap gap-6 md:gap-8 mb-8">
                 <a href="mailto:jinsheng.lai@outlook.com" class="hover:text-white transition flex items-center gap-2">
                     <i class="fas fa-envelope text-xl"></i> jinsheng.lai@outlook.com
                 </a>
@@ -397,11 +436,12 @@
                 </span>
             </div>
             <p class="text-sm text-slate-500">
-                &copy; 2025 Jinsheng Lai.
+                &copy; 2026 Jinsheng Lai.
             </p>
         </div>
     </footer>
-<!-- Gallery Modal Structure -->
+
+    <!-- Gallery Modal Structure -->
     <div id="gallery-modal" class="fixed inset-0 bg-black/90 z-[60] hidden justify-center items-center backdrop-blur-sm">
         <button onclick="closeGallery()" class="absolute top-4 right-4 text-white hover:text-academic-100 transition p-2">
             <i class="fas fa-times text-3xl"></i>
