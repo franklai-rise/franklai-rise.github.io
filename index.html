@@ -458,9 +458,10 @@
                         </div>
                     </div>
                     <div class="md:w-1/2">
-                        <div class="img-slot" style="height:130px">
-                            <div class="placeholder-inner">
-                                <span class="text-5xl font-light text-slate-300">13</span>
+                        <div class="img-slot" style="height:130px" onclick="openGallery('img-w13',0)">
+                            <img src="images/W13.png" alt="SAP2000 steel frame model">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/0 hover:bg-black/10 transition cursor-pointer">
+                                <span class="opacity-0 hover:opacity-100 bg-white/90 text-slate-800 text-xs font-bold px-3 py-1 rounded shadow-sm transition">View</span>
                             </div>
                         </div>
                         <p class="img-caption">SAP2000 steel frame model with dampers</p>
@@ -587,6 +588,9 @@
             ],
             'img-w11': [
                 { url: 'images/W11.png', caption: 'BP Neural Network Architecture' }
+            ],
+            'img-w13': [
+                { url: 'images/W13.png', caption: 'SAP2000 Steel Frame Model with Dampers' }
             ],
             'img-w14': [
                 { url: 'images/W14.png', caption: 'Coir-FRP Seawater and Sea-Sand Concrete Specimens' }
