@@ -370,7 +370,7 @@
                             <p class="img-caption">Semi-submersible platform hydrodynamic simulation</p>
                         </div>
                         <div>
-                            <div class="img-slot" style="height:130px">
+                            <div class="img-slot" style="height:130px" onclick="openGallery('img-w08',0)">
                                 <img src="images/W08.png" alt="DDPG framework">
                                 <div class="absolute inset-0 flex items-center justify-center bg-black/0 hover:bg-black/10 transition cursor-pointer">
                                     <span class="opacity-0 hover:opacity-100 bg-white/90 text-slate-800 text-xs font-bold px-3 py-1 rounded shadow-sm transition">View</span>
@@ -401,7 +401,7 @@
                             </div>
                         </div>
                         <div class="md:w-1/2">
-                            <div class="img-slot" style="height:110px">
+                            <div class="img-slot" style="height:110px" onclick="openGallery('img-w09',0)">
                                 <img src="images/W09.png" alt="3D-printed metamaterial">
                                 <div class="absolute inset-0 flex items-center justify-center bg-black/0 hover:bg-black/10 transition cursor-pointer">
                                     <span class="opacity-0 hover:opacity-100 bg-white/90 text-slate-800 text-xs font-bold px-3 py-1 rounded shadow-sm transition">View</span>
@@ -427,7 +427,7 @@
                             </div>
                         </div>
                         <div class="md:w-1/2">
-                            <div class="img-slot" style="height:110px">
+                            <div class="img-slot" style="height:110px" onclick="openGallery('img-w11',0)">
                                 <img src="images/W11.png" alt="BP neural network">
                                 <div class="absolute inset-0 flex items-center justify-center bg-black/0 hover:bg-black/10 transition cursor-pointer">
                                     <span class="opacity-0 hover:opacity-100 bg-white/90 text-slate-800 text-xs font-bold px-3 py-1 rounded shadow-sm transition">View</span>
@@ -483,9 +483,10 @@
                         </div>
                     </div>
                     <div class="md:w-1/2">
-                        <div class="img-slot" style="height:130px">
-                            <div class="placeholder-inner">
-                                <span class="text-5xl font-light text-slate-300">15</span>
+                        <div class="img-slot" style="height:130px" onclick="openGallery('img-w14',0)">
+                            <img src="images/W14.png" alt="Coir-FRP concrete specimens">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/0 hover:bg-black/10 transition cursor-pointer">
+                                <span class="opacity-0 hover:opacity-100 bg-white/90 text-slate-800 text-xs font-bold px-3 py-1 rounded shadow-sm transition">View</span>
                             </div>
                         </div>
                         <p class="img-caption">Coir-FRP concrete specimens</p>
@@ -566,16 +567,28 @@
     <script>
         const galleryData = {
             'stage1': [
-                { url: 'images/W01.png',   caption: 'CT Scanning of GFRP Blade Sections' },
-                { url: 'images/W02.png',    caption: 'Mechanical Testing Setup and Results' }
+                { url: 'images/W01.png', caption: 'CT Scanning of GFRP Blade Sections' },
+                { url: 'images/W02.png', caption: 'Mechanical Testing Setup and Results' }
             ],
             'stage2': [
                 { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Joint+Design',   caption: 'GFRP-Steel Joint Design and FEA Analysis' },
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Joint+Testing',       caption: 'Experimental Testing of Joint Specimens' }
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Joint+Testing',  caption: 'Experimental Testing of Joint Specimens' }
             ],
             'stage3': [
-                { url: 'images/W05.png',                                                          caption: 'WEC System Design and AQWA Simulation' },
-                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Wave+Tank',       caption: 'Wave Tank Testing Setup' }
+                { url: 'images/W05.png', caption: 'WEC System Design and AQWA Simulation' },
+                { url: 'https://placehold.co/800x600/e2e8f0/475569?text=Wave+Tank',      caption: 'Wave Tank Testing Setup' }
+            ],
+            'img-w08': [
+                { url: 'images/W08.png', caption: 'DDPG-based Intelligent O&M Framework' }
+            ],
+            'img-w09': [
+                { url: 'images/W09.png', caption: '3D-Printed Metamaterial Specimens' }
+            ],
+            'img-w11': [
+                { url: 'images/W11.png', caption: 'BP Neural Network Architecture' }
+            ],
+            'img-w14': [
+                { url: 'images/W14.png', caption: 'Coir-FRP Seawater and Sea-Sand Concrete Specimens' }
             ]
         };
 
