@@ -215,6 +215,18 @@
       font-weight: 600;
     }
 
+    .publication-subheading {
+      margin: 12px 0 6px;
+      color: var(--link);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .preparation-list p {
+      margin-bottom: 0.45rem;
+    }
+
     .tagline {
       color: var(--muted);
       font-size: 15px;
@@ -348,8 +360,8 @@
           <a href="images/W01.webp"><img class="contain" loading="lazy" src="images/W01.webp" alt="GFRP blade section CT scanning"></a>
         </div>
         <div>
-          <p><span class="paper-title"><strong>[P1]</strong> Mechanical Properties and Feasibility of GFRP from Decommissioned Large-Scale Wind Turbine Blades for Wave Energy Converter: A Case Study.</span></p>
-          <p>Yan-Wen Li*, <strong><u>Jin-Sheng Lai</u></strong>, Bin-Zhen Zhou, Li Cheng. <strong><em>Polymers</em></strong> (JCR Q1), 18(7), 892, 2026.</p>
+          <p><span class="paper-title"><strong>[P1]</strong> Mechanical Properties and Feasibility of GFRP from Decommissioned Large-Scale Wind-Turbine Blades for Wave Energy Converter: A Case Study.</span></p>
+          <p>Yan-Wen Li*, <strong><u>Jin-Sheng Lai</u></strong>, Bin-Zhen Zhou, Li Cheng. <strong><em>Polymers</em></strong> (JCR Q1), <strong>Published</strong>, 18(7), 892, 2026.</p>
           <p><a href="files/1.pdf"><strong>[Paper]</strong></a> <a href="https://doi.org/10.3390/polym18070892"><strong>[DOI]</strong></a></p>
         </div>
       </div>
@@ -360,7 +372,7 @@
         </div>
         <div>
           <p><span class="paper-title"><strong>[P2]</strong> Applications of Deep Reinforcement Learning in Optimization of Offshore Wind Power Operation and Maintenance.</span></p>
-          <p><strong><u>Jin-Sheng Lai</u></strong>*. <strong><em>ICEPET</em></strong> 2026, accepted.</p>
+          <p><strong><u>Jin-Sheng Lai</u></strong>*. <strong><em>ICEPET</em></strong>, <strong>Accepted</strong>, 2026.</p>
           <p><strong>[Paper]</strong></p>
         </div>
       </div>
@@ -370,20 +382,16 @@
           <a href="images/Joints.webp"><img class="contain" loading="lazy" src="images/Joints.webp" alt="Hybrid bonded-bolted GFRP and duplex stainless steel joint"></a>
         </div>
         <div>
-          <p><span class="paper-title"><strong>[P3]</strong> Structural reuse of decommissioned wind-turbine-blade GFRP in marine and civil infrastructure: performance and design of hybrid bonded-bolted GFRP-to-duplex stainless steel joints.</span></p>
+          <p><span class="paper-title"><strong>[P3]</strong> Structural Reuse of Decommissioned Wind-Turbine-Blade GFRP in Marine and Civil Infrastructure: Performance and Design of Hybrid Bonded-Bolted GFRP-to-Duplex Stainless Steel Joints.</span></p>
           <p><strong><u>Jin-Sheng Lai</u></strong>, Tian-Hui Fan, Li Cheng, Yan-Wen Li*.</p>
-          <p><strong><em>Construction and Building Materials</em></strong> (JCR Q1), <strong>Under review</strong>, 2026.</p>
+          <p><strong><em>Construction and Building Materials</em></strong> (JCR Q1), <strong>Required Reviews Completed</strong>, 2026.</p>
         </div>
       </div>
 
-      <div class="entry">
-        <div class="entry-media">
-          <a href="images/C1_fast2x.gif"><img class="contain" loading="lazy" src="images/C1_fast2x.gif" alt="Repurposed-blade hinged-raft wave energy converter simulation"></a>
-        </div>
-        <div>
-          <p><span class="paper-title"><strong>[P4 in preparation]</strong> A repurposed-blade hinged-raft wave energy converter: concept design, hydrodynamic performance, and structural integrity.</span></p>
-          <p><strong><u>Jin-Sheng Lai</u></strong>, Yan-Wen Li*. 2026.</p>
-        </div>
+      <h3 class="publication-subheading">In Preparation</h3>
+      <div class="preparation-list">
+        <p><span class="paper-title"><strong>[P1]</strong> A Repurposed-Blade Hinged-Raft Wave Energy Converter: Concept Design, Hydrodynamic Performance, and Structural Assessment.</span></p>
+        <p><span class="paper-title"><strong>[P2]</strong> Structural Modeling and Optimization of a 15MW CS-UHPC Composite Semi-Submersible Floating Wind Turbine Platform.</span></p>
       </div>
     </section>
 
@@ -406,7 +414,19 @@
 
       <div class="entry">
         <div class="entry-media">
-          <a href="images/W08.webp"><img class="contain" loading="lazy" src="images/W08.webp" alt="DDPG-based intelligent O&M framework"></a>
+          <a href="images/cs-uhpc-fowt-platform.png"><img class="contain" loading="lazy" src="images/cs-uhpc-fowt-platform.png" alt="15MW CS-UHPC composite semi-submersible floating wind turbine platform concept"></a>
+        </div>
+        <div>
+          <h3 class="entry-title">Structural Modeling and Optimization of a 15MW CS-UHPC Composite Semi-Submersible Floating Wind Turbine Platform</h3>
+          <p class="entry-meta">Research Project, Jun. 20, 2026-Present. Supervisor: <a href="https://www2.scut.edu.cn/jtxy/2023/0428/c35030a499867/page.htm">Yan-Wen Li</a>.</p>
+          <p>Responsible for the numerical modeling and computational analysis of a 15MW CS-UHPC composite semi-submersible platform. Establishing a time-domain fully coupled workflow in which OpenFAST provides aero-servo-elastic tower-base loads and ANSYS AQWA resolves platform hydrodynamics, motions, and mooring response, with platform kinematics and tower-base loads exchanged at each time step. The resulting tower-base forces and moments, fairlead tensions, platform motions, and distributed wet-surface hydrodynamic pressures are transferred to ANSYS Mechanical for finite-element stress, buckling, and structural optimization studies of the composite floating system.</p>
+          <p class="tagline">OpenFAST, ANSYS AQWA, ANSYS Mechanical, Aero-Hydro-Servo-Elastic Coupling, Finite Element Analysis, Structural Optimization.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-media">
+          <a href="images/W08.webp"><img class="contain" loading="lazy" src="images/W08.webp" alt="DDPG-based intelligent O&amp;M framework"></a>
         </div>
         <div>
           <h3 class="entry-title">Modeling and Intelligent Operation and Maintenance of Offshore Wind Systems</h3>
