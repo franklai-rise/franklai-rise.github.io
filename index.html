@@ -227,6 +227,16 @@
       margin-bottom: 0.45rem;
     }
 
+    .research-highlights {
+      margin: 0.2rem 0 0;
+      padding-left: 1.2rem;
+    }
+
+    .research-highlights li {
+      margin-bottom: 0.35rem;
+      text-align: justify;
+    }
+
     .tagline {
       color: var(--muted);
       font-size: 15px;
@@ -291,7 +301,8 @@
       }
 
       .intro-text,
-      .entry p {
+      .entry p,
+      .research-highlights li {
         text-align: left;
       }
     }
@@ -388,10 +399,10 @@
         </div>
       </div>
 
-      <h3 class="publication-subheading">In Preparation</h3>
+      <h3 class="publication-subheading">Manuscripts in Preparation</h3>
       <div class="preparation-list">
-        <p><span class="paper-title"><strong>[P1]</strong> A Repurposed-Blade Hinged-Raft Wave Energy Converter: Concept Design, Hydrodynamic Performance, and Structural Assessment.</span></p>
-        <p><span class="paper-title"><strong>[P2]</strong> Structural Modeling and Optimization of a 15MW CS-UHPC Composite Semi-Submersible Floating Wind Turbine Platform.</span></p>
+        <p><span class="paper-title"><strong>[M1]</strong> A Repurposed-Blade Hinged-Raft Wave Energy Converter: Concept Design, Hydrodynamic Performance, and Structural Assessment.</span></p>
+        <p><span class="paper-title"><strong>[M2]</strong> Structural Modeling and Optimization of a 15MW CS-UHPC Composite Semi-Submersible Floating Wind Turbine Platform.</span></p>
       </div>
     </section>
 
@@ -407,8 +418,13 @@
         <div>
           <h3 class="entry-title">High-Value Repurposing of Decommissioned Wind Blade GFRP: Materials, Joints, and Marine Applications</h3>
           <p class="entry-meta">Master's Thesis, 2024-Present. Supervisor: <a href="https://www2.scut.edu.cn/jtxy/2023/0428/c35030a499867/page.htm">Yan-Wen Li</a>.</p>
-          <p>Conducted material characterization of retired blade GFRP through mechanical testing and CT scanning, developed GFRP-duplex stainless steel bonded/bolted joint designs, and investigated an articulated multi-body wave energy converter through hydrodynamic simulation and wave tank testing.</p>
-          <p class="tagline">CT Scanning, Mechanical Testing, Abaqus, AQWA, Wave Tank. Images: <a href="images/Materials.webp">materials</a>, <a href="images/Joints.webp">joint design</a>, <a href="images/W05.webp">system</a>.</p>
+          <ul class="research-highlights">
+            <li>Executed mechanical characterization of 100+ repurposed-blade GFRP specimens and derived engineering design values via ANOVA and eigenvalue analysis; an LCA showed 71.5% lower carbon footprint and 37.4% lower structural mass than an all-steel wave energy converter.</li>
+            <li>Proposed position-specific repurposing strategies based on tip/mid/root material property variations along the blade.</li>
+            <li>Independently designed and tested hybrid bonded-bolted GFRP-duplex stainless steel lap joints; identified the adhesive layer as the governing failure mode with bolts providing redundancy; validated numerically using Abaqus FEA; manuscript in preparation.</li>
+            <li>Established hydrostatic equilibria, robustly screened the Type-II minimum retained tip length, and projected BEM-derived hydrodynamic coefficients onto a 7-DOF hinged raft-type two-body model. Built a one-way coupled time-domain-to-FEA workflow incorporating nonlinear hydrostatics, quadratic drag, PTO and mooring loads, and transferred synchronized critical load states for structural assessment.</li>
+            <li><strong>Flume experiment (in progress)</strong> to validate the hinged raft-type two-body WEC model.</li>
+          </ul>
         </div>
       </div>
 
