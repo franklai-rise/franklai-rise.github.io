@@ -71,7 +71,7 @@
     .page {
       width: min(900px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 28px 0 24px;
+      padding: 28px 0 calc(140px + env(safe-area-inset-bottom, 0px));
       overflow-wrap: break-word;
     }
 
@@ -250,6 +250,24 @@
       font-weight: 600;
     }
 
+    .project-entry {
+      align-items: center;
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+
+    .project-entry .project-logo {
+      width: 112px;
+      height: 112px;
+      margin: 0 auto;
+      object-fit: contain;
+      border-radius: 0;
+    }
+
+    .project-entry p {
+      text-align: left;
+    }
+
     .paper-resources {
       color: var(--link);
       font-size: 15px;
@@ -294,10 +312,39 @@
     }
 
     .footer {
-      padding-bottom: 12px;
+      position: fixed;
+      inset: auto 0 0;
+      z-index: 10;
+      padding: 12px 0 calc(12px + env(safe-area-inset-bottom, 0px));
+      border-top: 1px solid var(--light-rule);
+      background: #ffffff;
+    }
+
+    .contact-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px 20px;
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px 14px;
+      font-size: 15px;
+    }
+
+    .footer .section-heading {
+      margin: 0;
+      font-size: 16px;
     }
 
     .copyright {
+      margin: 0;
       color: #777777;
       font-size: 14px;
       text-align: right;
@@ -388,15 +435,6 @@
 
     <hr>
 
-    <section id="academic-poster">
-      <h2 class="section-heading">Academic Poster of My Master's Thesis</h2>
-      <a href="images/academic-poster-masters-thesis.webp">
-        <img class="poster-image" src="images/academic-poster-masters-thesis.webp" alt="Academic poster of Jinsheng Lai's master's thesis on a repurposed-blade hinged raft-type wave energy converter">
-      </a>
-    </section>
-
-    <hr>
-
     <section id="news">
       <h2 class="section-heading">News</h2>
       <ul class="news-list">
@@ -409,6 +447,29 @@
         <li>[06/2024] Received Outstanding Graduate, Hainan University.</li>
         <li>[10/2023] Won First Prize in the National University Structural Design Information Technology Contest, China.</li>
       </ul>
+    </section>
+
+    <hr>
+
+    <section id="education">
+      <h2 class="section-heading">Education</h2>
+      <div class="education-item">
+        <strong>South China University of Technology</strong> (Project 985), Guangzhou, China<br>
+        M.Eng. in Civil Engineering, Sep. 2024-Expected Jun. 2027. GPA: 3.63/4.0. Admission with entrance exam waived.
+      </div>
+      <div class="education-item">
+        <strong>Hainan University</strong> (Project 211), Haikou, China<br>
+        B.Eng. in Civil Engineering, Sep. 2020-Jun. 2024. GPA: 3.61/4.0 (88.26/100).
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="academic-poster">
+      <h2 class="section-heading">Academic Poster of My Master's Thesis</h2>
+      <a href="images/academic-poster-masters-thesis.webp">
+        <img class="poster-image" src="images/academic-poster-masters-thesis.webp" alt="Academic poster of Jinsheng Lai's master's thesis on a repurposed-blade hinged raft-type wave energy converter">
+      </a>
     </section>
 
     <hr>
@@ -566,15 +627,49 @@
 
     <hr>
 
-    <section id="education">
-      <h2 class="section-heading">Education</h2>
-      <div class="education-item">
-        <strong>South China University of Technology</strong> (Project 985), Guangzhou, China<br>
-        M.Eng. in Civil Engineering, Sep. 2024-Expected Jun. 2027. GPA: 3.63/4.0. Admission with entrance exam waived.
+    <section id="skills">
+      <h2 class="section-heading">Skills</h2>
+      <div class="skill-item"><strong>Programming:</strong> Python, MATLAB, Linux; AI-assisted engineering workflows (Claude Code, Codex).</div>
+      <div class="skill-item"><strong>Simulation:</strong> ABAQUS, ANSYS AQWA, OpenFAST, Sesam.</div>
+      <div class="skill-item"><strong>Languages:</strong> Chinese (native), English (IELTS 7.0 overall, Mar. 2026; Reading 7.0, Listening 7.0, Speaking 6.5, Writing 6.5).</div>
+    </section>
+
+    <hr>
+
+    <section id="vibe-coding-projects">
+      <h2 class="section-heading">Vibe Coding Projects</h2>
+
+      <div class="entry project-entry">
+        <div class="entry-media">
+          <img class="project-logo" loading="lazy" src="images/projects/stagemanager.svg" width="112" height="112" alt="StageManager logo">
+        </div>
+        <div>
+          <h3 class="entry-title">StageManager for Windows · Lai Edition</h3>
+          <p><a href="https://franklai.com/StageManager/">Website</a> | <a href="https://github.com/franklai-rise/StageManager">GitHub</a></p>
+          <p>My customized fork of Andreas Wäscher's StageManager for Windows. It organizes open windows into a sidebar of preview cards, with expandable window groups, pinned cards, and a Focus mode for a more orderly desktop.</p>
+        </div>
       </div>
-      <div class="education-item">
-        <strong>Hainan University</strong> (Project 211), Haikou, China<br>
-        B.Eng. in Civil Engineering, Sep. 2020-Jun. 2024. GPA: 3.61/4.0 (88.26/100).
+
+      <div class="entry project-entry">
+        <div class="entry-media">
+          <img class="project-logo" loading="lazy" src="images/projects/instanttranslate.png" width="112" height="112" alt="InstantTranslate logo">
+        </div>
+        <div>
+          <h3 class="entry-title">InstantTranslate for Windows</h3>
+          <p><a href="https://franklai.com/InstantTranslate/">Website</a> | <a href="https://github.com/franklai-rise/InstantTranslate">GitHub</a></p>
+          <p>A Windows text-selection translation tool powered by DeepSeek. It shows streaming translations beside selected text and supports contextual explanations, code analysis, follow-up questions, and saving useful results as local Markdown notes.</p>
+        </div>
+      </div>
+
+      <div class="entry project-entry">
+        <div class="entry-media">
+          <img class="project-logo" loading="lazy" src="images/projects/pinboard.png" width="112" height="112" alt="Pinboard logo">
+        </div>
+        <div>
+          <h3 class="entry-title">Pinboard</h3>
+          <p><a href="https://franklai.com/Pinboard/">Website</a> | <a href="https://github.com/franklai-rise/Pinboard">GitHub</a></p>
+          <p>A local-first Windows workspace for collecting PixPin screenshots and text clips. Daily boards, an infinite canvas, annotations, and on-device OCR search help organize ideas while keeping each board in a local file.</p>
+        </div>
       </div>
     </section>
 
@@ -592,22 +687,15 @@
 
     <hr>
 
-    <section id="skills">
-      <h2 class="section-heading">Skills</h2>
-      <div class="skill-item"><strong>Programming:</strong> Python, MATLAB, Linux; AI-assisted engineering workflows (Claude Code, Codex).</div>
-      <div class="skill-item"><strong>Simulation:</strong> ABAQUS, ANSYS AQWA, OpenFAST, Sesam.</div>
-      <div class="skill-item"><strong>Languages:</strong> Chinese (native), English (IELTS 7.0 overall, Mar. 2026; Reading 7.0, Listening 7.0, Speaking 6.5, Writing 6.5).</div>
-    </section>
-
-    <hr>
-
     <section id="contact" class="footer">
-      <h2 class="section-heading">Contact</h2>
-      <p>
-        <a href="mailto:frankjslai@gmail.com">frankjslai@gmail.com</a> &nbsp;/&nbsp;
-        Guangzhou, China
-      </p>
-      <p class="copyright">&copy; 2026 Jinsheng Lai. All rights reserved.</p>
+      <div class="contact-inner">
+        <div class="contact-details">
+          <h2 class="section-heading">Contact</h2>
+          <a href="mailto:frankjslai@gmail.com">frankjslai@gmail.com</a>
+          <span>Guangzhou, China</span>
+        </div>
+        <p class="copyright">&copy; 2026 Jinsheng Lai. All rights reserved.</p>
+      </div>
     </section>
   </main>
 
