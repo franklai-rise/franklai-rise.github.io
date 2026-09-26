@@ -8,7 +8,15 @@
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 32px 18px; background: #faf7f8; color: #25252a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; line-height: 1.6; }
-    main { width: 100%; max-width: 420px; }
+    main { width: 100%; max-width: 1080px; }
+    .profile { max-width: 420px; margin: 0 auto; }
+    .gallery { margin-top: 40px; }
+    .gallery h2 { margin: 0 0 6px; font-size: 22px; }
+    .gallery-intro { margin: 0 0 20px; color: #777; font-size: 13px; }
+    .gallery figure { margin: 0 0 24px; }
+    .gallery a { display: block; border: 1px solid #eee2e5; border-radius: 16px; overflow: hidden; background: white; }
+    .gallery img { display: block; width: 100%; height: auto; }
+    .gallery figcaption { margin-top: 8px; color: #777; font-size: 12px; }
     .back { display: inline-block; margin-bottom: 18px; color: #666; font-size: 13px; text-decoration: none; }
     .card { padding: 32px; border: 1px solid #eee2e5; border-radius: 24px; background: white; box-shadow: 0 12px 42px #59203208; }
     .brand { margin: 0 0 28px; color: #d91c40; font-size: 14px; font-weight: 650; }
@@ -32,11 +40,12 @@
 </head>
 <body>
   <main>
+    <div class="profile">
     <a class="back" href="index.html">← 返回学术主页 / Home</a>
     <article class="card" aria-label="小红书个人名片">
       <p class="brand">小红书 <span>rednote</span></p>
       <div class="identity">
-        <img class="avatar" src="images/profile-2026.jpg" width="72" height="72" alt="赖近昇">
+        <img class="avatar" src="images/rednote/avatar.jpg" width="72" height="72" alt="最棒的L的小红书头像">
         <div><h1>最棒的L</h1><p class="handle">小红书号：ljs_scut</p></div>
       </div>
       <div class="bio">
@@ -50,6 +59,23 @@
       <a class="visit" href="https://www.xiaohongshu.com/user/profile/5b5be1fd11be10585f16d4cb" target="_blank" rel="noopener noreferrer">前往小红书主页 ↗</a>
       <p class="note">此名片无需登录。查看小红书笔记或关注可能需要登录。</p>
     </article>
+    </div>
+    <section class="gallery" aria-labelledby="notes-heading">
+      <h2 id="notes-heading">我的小红书笔记</h2>
+      <p class="gallery-intro">一些学习、科研工具与日常分享。点击图片可查看原图。</p>
+      <figure>
+        <a href="images/rednote/notes-1.png" target="_blank" rel="noopener noreferrer" aria-label="查看第一张笔记截图原图（新标签页）">
+          <img src="images/rednote/notes-1.png" width="1070" height="701" loading="lazy" alt="小红书笔记截图：学习记录、Windows 工具、AI 科研与日常分享">
+        </a>
+        <figcaption>学习记录 · 效率工具 · AI 探索</figcaption>
+      </figure>
+      <figure>
+        <a href="images/rednote/notes-2.png" target="_blank" rel="noopener noreferrer" aria-label="查看第二张笔记截图原图（新标签页）">
+          <img src="images/rednote/notes-2.png" width="1063" height="784" loading="lazy" alt="小红书笔记截图：数值分析笔记、科研阅读、学习方法与生活记录">
+        </a>
+        <figcaption>数值分析 · 科研阅读 · 学习与生活</figcaption>
+      </figure>
+    </section>
   </main>
 </body>
 </html>
