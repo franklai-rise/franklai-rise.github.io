@@ -114,6 +114,41 @@
       margin-top: 8px;
     }
 
+    .social-follow {
+      margin-top: 12px;
+    }
+
+    .xiaohongshu-follow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 32px;
+      padding: 5px 13px;
+      border-radius: 999px;
+      background: #d91c40;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+
+    .xiaohongshu-follow:hover,
+    .xiaohongshu-follow:focus {
+      background: #b91635;
+      color: #ffffff;
+    }
+
+    .xiaohongshu-follow:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+    }
+
+    .xiaohongshu-follow .follow-label {
+      padding-left: 8px;
+      border-left: 1px solid rgba(255, 255, 255, 0.45);
+    }
+
     .seeking {
       font-size: 18px;
       font-weight: 700;
@@ -322,6 +357,13 @@
           <a href="https://scholar.google.com/citations?user=dxUNPkoAAAAJ&amp;hl=en">Google Scholar</a> |
           <a href="https://orcid.org/0009-0008-6927-5009">ORCID</a> |
           <a href="https://github.com/franklai-rise">GitHub</a>
+        </div>
+        <div class="social-follow">
+          <a class="xiaohongshu-follow" href="https://xhslink.cn/o/7URtJyugJwj" target="_blank" rel="noopener noreferrer" aria-label="Follow Jinsheng Lai on Xiaohongshu (opens in a new tab)">
+            <span lang="zh-CN">小红书</span>
+            <span class="follow-label">Follow</span>
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </div>
 
