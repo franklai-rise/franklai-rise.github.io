@@ -118,6 +118,64 @@
       margin-top: 12px;
     }
 
+    .rednote-card {
+      max-width: 235px;
+      margin: 14px auto 0;
+      padding: 12px;
+      border: 1px solid #f1dce1;
+      border-radius: 12px;
+      background: #fffafb;
+      text-align: left;
+    }
+
+    .rednote-brand {
+      margin-bottom: 9px;
+      color: #d91c40;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .rednote-identity {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .rednote-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .rednote-name {
+      display: block;
+      font-size: 15px;
+    }
+
+    .rednote-handle,
+    .rednote-note {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .rednote-card .rednote-bio {
+      margin: 9px 0 6px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .rednote-card .rednote-stats {
+      margin: 0 0 9px;
+      font-size: 12px;
+    }
+
+    .rednote-card .rednote-note {
+      margin: 7px 0 0;
+      font-size: 10px;
+      line-height: 1.4;
+    }
+
     .xiaohongshu-follow {
       display: inline-flex;
       align-items: center;
@@ -423,13 +481,24 @@
           <a href="https://orcid.org/0009-0008-6927-5009">ORCID</a> |
           <a href="https://github.com/franklai-rise">GitHub</a>
         </div>
-        <div class="social-follow">
-          <a class="xiaohongshu-follow" href="https://xhslink.cn/o/7URtJyugJwj" target="_blank" rel="noopener noreferrer" aria-label="Follow Jinsheng Lai on Xiaohongshu (opens in a new tab)">
-            <span><span lang="zh-CN">小红书</span> rednote</span>
-            <span class="follow-label">Follow</span>
+        <aside class="rednote-card" aria-label="Xiaohongshu profile card">
+          <div class="rednote-brand"><span lang="zh-CN">小红书</span> · rednote</div>
+          <div class="rednote-identity">
+            <img class="rednote-avatar" src="images/profile-2026.jpg" width="38" height="38" alt="Jinsheng Lai">
+            <div>
+              <strong class="rednote-name" lang="zh-CN">最棒的L</strong>
+              <span class="rednote-handle">@ljs_scut</span>
+            </div>
+          </div>
+          <p class="rednote-bio" lang="zh-CN">分享自我提升与 AI 科研探索</p>
+          <p class="rednote-stats"><strong>1,558</strong> followers</p>
+          <a class="xiaohongshu-follow" href="https://www.xiaohongshu.com/user/profile/5b5be1fd11be10585f16d4cb" target="_blank" rel="noopener noreferrer" aria-label="Visit Jinsheng Lai's Xiaohongshu profile (opens in a new tab)">
+            <span lang="zh-CN">前往小红书</span>
+            <span class="follow-label">Visit</span>
             <span aria-hidden="true">↗</span>
           </a>
-        </div>
+          <p class="rednote-note">Followers as of Sep. 2026.<br>Viewing more on rednote may require login.</p>
+        </aside>
       </div>
 
       <div class="intro-text">
