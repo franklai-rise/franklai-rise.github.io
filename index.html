@@ -311,6 +311,19 @@
       margin-bottom: 0.65rem;
     }
 
+    .education-item {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .education-logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
     .footer {
       position: fixed;
       inset: auto 0 0;
@@ -438,8 +451,8 @@
     <section id="news">
       <h2 class="section-heading">News</h2>
       <ul class="news-list">
-        <li>[09/2026] Our paper, "Structural reuse of GFRP from decommissioned wind turbine blades: Mechanical behavior of HBB joints with duplex stainless steel", was accepted for publication in <em>Construction and Building Materials</em>.</li>
-        <li>[07/2026] Completed the hydrodynamic analysis and load-transfer work for the M1 manuscript.</li>
+        <li>[09/2026] Our paper, "Structural reuse of GFRP from decommissioned wind turbine blades: Mechanical behavior of HBB joints with duplex stainless steel", was accepted for publication in <em>Construction and Building Materials</em>. I am the first author of this paper.</li>
+        <li>[07/2026] Completed the hydrodynamic analysis and load-transfer work for the P4 manuscript.</li>
         <li>[06/2026] Built an internal computing cluster for our research group and open-sourced the full <a href="https://github.com/franklai-rise/cluster-management">setup workflow</a>.</li>
         <li>[05/2026] My conference paper on deep reinforcement learning for offshore wind power operation and maintenance was accepted by ICEPET.</li>
         <li>[04/2026] Published a journal paper in <em>Polymers</em> on the performance of GFRP from decommissioned wind turbine blades for wave energy converters.</li>
@@ -454,12 +467,14 @@
     <section id="education">
       <h2 class="section-heading">Education</h2>
       <div class="education-item">
-        <strong>South China University of Technology</strong> (Project 985), Guangzhou, China<br>
-        M.Eng. in Civil Engineering, Sep. 2024-Expected Jun. 2027. GPA: 3.63/4.0. Admission with entrance exam waived.
+        <img class="education-logo" src="images/education/scut.png" width="48" height="48" alt="South China University of Technology logo">
+        <div><strong>South China University of Technology</strong> (Project 985), Guangzhou, China<br>
+        M.Eng. in Civil Engineering, Sep. 2024-Expected Jun. 2027. GPA: 3.63/4.0. Admission with entrance exam waived.</div>
       </div>
       <div class="education-item">
-        <strong>Hainan University</strong> (Project 211), Haikou, China<br>
-        B.Eng. in Civil Engineering, Sep. 2020-Jun. 2024. GPA: 3.61/4.0 (88.26/100).
+        <img class="education-logo" src="images/education/hainan.svg" width="48" height="48" alt="Hainan University logo">
+        <div><strong>Hainan University</strong> (Project 211), Haikou, China<br>
+        B.Eng. in Civil Engineering, Sep. 2020-Jun. 2024. GPA: 3.61/4.0 (88.26/100).</div>
       </div>
     </section>
 
@@ -481,9 +496,9 @@
           <a href="images/W01.webp"><img class="contain" loading="lazy" src="images/W01.webp" alt="GFRP blade section CT scanning"></a>
         </div>
         <div>
-          <p><span class="paper-title"><strong>[P1]</strong> Mechanical Properties and Feasibility of GFRP from Decommissioned Large-Scale Wind-Turbine Blades for Wave Energy Converter: A Case Study.</span></p>
-          <p>Yan-Wen Li*, <strong><u>Jin-Sheng Lai</u></strong>, Bin-Zhen Zhou, Li Cheng. <strong><em>Polymers</em></strong> (JCR Q1), <strong>Published</strong>, 18(7), 892, 2026.</p>
-          <p class="paper-resources">PDF | DOI | Abstract | BibTeX</p>
+          <p><span class="paper-title"><strong>[P1]</strong> Mechanical Properties and Feasibility of GFRP from Decommissioned Large-Scale Wind Turbine Blades for Wave Energy Converter: A Case Study.</span></p>
+          <p>Yan-Wen Li*, <strong><u>Jin-Sheng Lai</u></strong>, Bin-Zhen Zhou, Li Cheng. <strong><em>Polymers</em></strong> (JCR Q1, IF 5.8 [2025]), <strong>Published</strong>, 18(7), 892, 2026.</p>
+          <p class="paper-resources"><a href="files/1.pdf">PDF</a> | <a href="https://doi.org/10.3390/polym18070892">DOI</a> | <a href="files/p1-abstract.html">Abstract</a> | <a href="files/p1.bib" download>BibTeX</a></p>
         </div>
       </div>
 
@@ -505,15 +520,27 @@
         <div>
           <p><span class="paper-title"><strong>[P3]</strong> Structural reuse of GFRP from decommissioned wind turbine blades: Mechanical behavior of HBB joints with duplex stainless steel.</span></p>
           <p><strong><u>Jin-Sheng Lai</u></strong>, Tian-Hui Fan, Li Cheng, Yan-Wen Li*.</p>
-          <p><strong><em>Construction and Building Materials</em></strong> (JCR Q1), <strong>Accepted</strong>, 2026.</p>
+          <p><strong><em>Construction and Building Materials</em></strong> (JCR Q1, IF 8.9 [2025]), <strong>Accepted</strong>, 2026.</p>
+          <p class="paper-resources">PDF | DOI | Abstract | BibTeX</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-media">
+          <a href="images/p4-cloud-images.webp"><img class="contain" loading="lazy" src="images/p4-cloud-images.webp" alt="Displacement and rotation contours of repurposed-blade wave energy converters"></a>
+        </div>
+        <div>
+          <p><span class="paper-title"><strong>[P4]</strong> Energy Capture Performance and Structural Feasibility of a Repurposed-Blade Hinged Raft-Type Wave Energy Converter.</span></p>
+          <p><strong><u>Jin-Sheng Lai</u></strong>, Binzhen Zhou, Yan-Wen Li*, Pan Zou.</p>
+          <p><strong><em>Energy</em></strong>, <strong>With Editor</strong>, 2026.</p>
           <p class="paper-resources">PDF | DOI | Abstract | BibTeX</p>
         </div>
       </div>
 
       <h3 class="publication-subheading">Manuscripts in Preparation</h3>
       <div class="preparation-list">
-        <p><span class="paper-title"><strong>[M1]</strong> A Repurposed-Blade Hinged-Raft Wave Energy Converter: Concept Design, Hydrodynamic Performance, and Structural Assessment.</span></p>
-        <p><span class="paper-title"><strong>[M2]</strong> Structural Modeling and Optimization of a 15MW CS-UHPC Composite Semi-Submersible Floating Wind Turbine Platform.</span></p>
+        <p><span class="paper-title"><strong>[M1]</strong> Structural Modeling and Optimization of a 15MW CS-UHPC Composite Semi-Submersible Floating Wind Turbine Platform.</span></p>
+        <p><span class="paper-title"><strong>[M2]</strong> Non-measurement points in three-dimensional surface measurement: positional persistence, quantity–spatial representation and parameter response.</span></p>
       </div>
     </section>
 
